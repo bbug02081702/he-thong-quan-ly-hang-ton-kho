@@ -1,0 +1,6 @@
+----Admin--------
+Admin: admin@mail.com
+Password: tainx888888
+------nhan vien------
+staff@mail.com
+Password: tainx888888
