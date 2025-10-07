@@ -65,4 +65,33 @@ class RegisterController extends Controller {
 			'password' => Hash::make($data['password']),
 		]);
 	}
+	
+    public function update(Request $request, $id)
+    {
+        $user = User::findOrFail($id);
+
+        $request->validate([
+            'name'  => 'required|string|max:255',
+            'email' => 'required|email|unique:users,email,' . $user->id,
+            'role'  => 'required|exists:roles,name',
+        ]);
+
+        $user->update([
+            'name'  => $request->name,
+            'email' => $request->email,
+        ]);
+
+        $user->syncRoles([$request->role]);
+
+        return redirect()->back()->with('success', 'Cập nhật thành công');
+    }
+
+    public function destroy($id)
+    {
+        $user = User::findOrFail($id);
+
+        $user->delete();
+
+        return redirect()->back()->with('success', 'Xóa người dùng thành công');
+    }
 }

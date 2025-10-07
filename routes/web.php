@@ -64,4 +64,6 @@ Route::group(['middleware' => 'auth'], function () {
 
 	Route::resource('user', 'UserController');
 	Route::get('/apiUser', 'UserController@apiUsers')->name('api.users');
+	Route::put('/user/{id}', 'UserController@update')->name('users.update');
+    Route::delete('/user/{id}','UserController@destroy')->name('users.destroy');
 });

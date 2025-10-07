@@ -17,13 +17,13 @@
 
                     <div class="box-body">
                         <div class="form-group">
-                            <label >Name</label>
+                            <label >Tên</label>
                             <input type="text" class="form-control" id="nama" name="nama"  autofocus required>
                             <span class="help-block with-errors"></span>
                         </div>
 
                         <div class="form-group">
-                            <label >Address</label>
+                            <label >Địa chỉ</label>
                             <input type="text" class="form-control" id="alamat" name="alamat"   required>
                             <span class="help-block with-errors"></span>
                         </div>
@@ -35,7 +35,7 @@
                         </div>
 
                         <div class="form-group">
-                            <label >Phone</label>
+                            <label >Điện thoại</label>
                             <input type="text" class="form-control" id="telepon" name="telepon"   required>
                             <span class="help-block with-errors"></span>
                         </div>
@@ -47,8 +47,8 @@
                 </div>
 
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Cancel</button>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Hủy bỏ</button>
+                    <button type="submit" class="btn btn-primary">Xác nhận</button>
                 </div>
 
             </form>

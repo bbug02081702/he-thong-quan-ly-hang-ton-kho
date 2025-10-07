@@ -11,7 +11,7 @@
 {{--<!-- Ionicons -->--}}
 {{--<link rel="stylesheet" href="{{ asset('assets/bower_components/Ionicons/css/ionicons.min.css')}} ">--}}
 
-{{--<title>Product Masuk Exports All PDF</title>--}}
+{{--<title>SP PDF</title>--}}
 {{--</head>--}}
 {{--<body>--}}
 <style>

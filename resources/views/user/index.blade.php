@@ -85,7 +85,7 @@
                 dataType: "JSON",
                 success: function(data) {
                     $('#modal-form').modal('show');
-                    $('.modal-title').text('Edit Suppliers');
+                    $('.modal-title').text('Chỉnh sửa nhà cung cấp');
 
                     $('#id').val(data.id);
                     $('#name').val(data.name);

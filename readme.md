@@ -26,6 +26,6 @@ Quản lý nhà cung cấp
 Quản lý khách hàng
 Quản lý sản phẩm đầu ra
 Mua sản phẩm
-Nhap/ Xuat (PDF)(Excel)
+Nhập / Xuất (PDF)(Excel)
 Tìm kiếm hồ sơ
 Quản lý người dùng hệ thống

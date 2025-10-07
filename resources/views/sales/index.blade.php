@@ -10,13 +10,13 @@
     <div class="box">
 
         <div class="box-header">
-            <h3 class="box-title">Data Sales</h3>
+            <h3 class="box-title">Dữ liệu khách hàng</h3>
         </div>
 
         <div class="box-header">
-            <a onclick="addForm()" class="btn btn-primary" >Add Customers</a>
-            <a href="{{ route('exportPDF.salesAll') }}" class="btn btn-danger">Export PDF</a>
-            <a href="{{ route('exportExcel.salesAll') }}" class="btn btn-success">Export Excel</a>
+            <a onclick="addForm()" class="btn btn-primary" >Thêm khách hàng</a>
+            <a href="{{ route('exportPDF.salesAll') }}" class="btn btn-danger">Xuất PDF</a>
+            <a href="{{ route('exportExcel.salesAll') }}" class="btn btn-success">Xuất Excel</a>
         </div>
 
 
@@ -26,10 +26,10 @@
                 <thead>
                 <tr>
                     <th>ID</th>
-                    <th>Name</th>
-                    <th>Address</th>
+                    <th>Tên</th>
+                    <th>Địa chỉ</th>
                     <th>Email</th>
-                    <th>Phone</th>
+                    <th>Điện thoại</th>
                     <th></th>
                 </tr>
                 </thead>
@@ -101,7 +101,7 @@
                 dataType: "JSON",
                 success: function(data) {
                     $('#modal-form').modal('show');
-                    $('.modal-title').text('Edit Sales');
+                    $('.modal-title').text('Sửa bán hàng');
 
                     $('#id').val(data.id);
                     $('#nama').val(data.nama);
